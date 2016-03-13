@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - поиск гостиницы</title>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <header class="header">
+        <nav iclass="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+            <li class="menu__item"><a href="photo.html" class="menu__link">Фото и видео</a></li>
+            <li class="menu__item"><a class="menu__link">Форма отзыва</a></li>
+            <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__link">Html Academy</a></li>
+          </ul>
+        </nav>
+        <button class="header__menu-toggle">Переключение меню</button>
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img src="" alt="" height="" width="" class="logo__picture">
+          </a>
+        </div>
+      </header>
+
+      <div class="intro">
+        <img src="" alt="" height="" width="" class="intro__image">
+      </div>
+
+      <section class="form">
+        <div class="form__header">
+          <h1 class="form__title">Оставьте свой отзыв</h1>
+          <p class="form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+
+        <form action="/echo" method="GET">
+
+          <div class="form__section">
+            <div class="form__legend">Представьтесь, пожалуйста:</div>
+            <div class="form__line">
+              <label for="name">Имя</label>
+              <input type="text" placeholder="Петр" id="name" required>
+            </div>
+            <div class="form__line">
+              <label for="surname">Фамилия</label>
+              <input type="text" placeholder="Иванов" id="surname" required>
+            </div>
+            <div class="form__line">
+              <label for="middle-name">Отчество</label>
+              <input type="text" placeholder="Александрович" id="middle-name" required>
+            </div>
+          </div>
+
+          <div class="form__section">
+            <div class="form__legend">Контактная информация:</div>
+            <div class="form__line">
+              <label for="phone">Контактный телефон:</label>
+              <input type="text" placeholder="Введите телефон" id="phone" required>
+            </div>
+            <p class="form__error">Ошибка, перепроверьте номер</p>
+            <div class="form__line">
+              <label for="email">Электронная почта:</label>
+              <input type="text" placeholder="Введите e-mail" id="email" required>
+            </div>
+          </div>
+
+          <div class="form__section">
+            <div class="form__legend">Ваше Общее впечатление:</div>
+            <div class="form__line">
+              <input type="radio" name="impression" value="+1" id="positive" checked>
+              <label for="positive">Скорее положительное</label>
+            </div>
+            <div class="form__line">
+              <input type="radio" name="impression" value="-1" id="negative">
+              <label for="negative">Скорее отрицательное</label>
+            </div>
+            <div class="form__line">
+              <input type="radio" name="impression" value="0" id="neutral">
+              <label for="neutral">Затрудняюсь ответить</label>
+            </div>
+          </div>
+
+          <div class="form__ection">
+            <div class="form__legend">Посещенные достопримечательности:</div>
+            <div class="form__line">
+              <input type="radio" name="attraction1" id="attr1" checked>
+              <label for="attr1">Мост Дьявола</label>
+            </div>
+            <div class="form__line">
+              <input type="radio" name="attraction2" id="attr2" checked>
+              <label for="attr2">Слайд-парк</label>
+            </div>
+            <div class="form__line">
+              <input type="radio" name="attraction3" id="attr3">
+              <label for="attr3">Гора-Колокол</label>
+            </div>
+            <div class="form__line">
+              <input type="radio" name="attraction4" id="attr4" checked>
+              <label for="attr4">Красные скалы</label>
+            </div>
+          </div>
+
+          <div class="form__section">
+            <div class="form__legend">Опишите свои эмоции:</div>
+            <div class="form__comment">
+              <textarea name="comment">Опишите подробно все свои восторги</textarea>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <input class="btn btn--submit" type="submit" value="Отправить отзыв">
+          </div>
+
+        </form>
+      </section>
+
+      <div class="popup">
+        <p class="popup__title">Ваш отзыв отправлен!</p>
+        <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="popup__btn-bg">
+          <a href="#" class="sedona-btn sedona-btn--popup">Закрыть окно</a>
+        </div>
+      </div>
+
+      <div class="popup">
+        <p class="popup__title">Что-то пошло не так!</p>
+        <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <a href="#" class="sedona-btn sedona-btn--popup">Ок</a>
+      </div>
+
+      <footer class="footer">
+        <div class="hashtag">#visitsedona</div>
+        <div class="social-btns">
+          <a href="#" class="social-btn">Twitter</a>
+          <a href="#" class="social-btn">Facebook</a>
+          <a href="#" class="social-btn">youtube</a>
+        </div>
+        <p class="copyright">Разработано <a href="https://htmlacademy.ru/" class="copyright__link">htmlacademy.ru</a></p>
+      </footer>
+
+    </div>
+  </body>
+</html>

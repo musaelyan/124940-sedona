@@ -1,0 +1,28 @@
+body {
+
+}
+
+.wrapper {
+
+}
+
+// подключение переменных
+@import "variables.scss";
+
+// подключение миксинов
+
+// подключение всех стилей
+@import "blocks/header.scss";
+@import "blocks/intro.scss";
+@import "blocks/footer.scss";
+
+@import "blocks/advantages.scss";
+@import "blocks/find-hotel.scss";
+@import "blocks/map.scss";
+
+@import "blocks/photos.scss";
+@import "blocks/main-promo.scss";
+@import "blocks/video.scss";
+
+@import "blocks/form.scss";
+@import "blocks/popup.scss";

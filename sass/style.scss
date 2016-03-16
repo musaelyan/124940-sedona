@@ -1,0 +1,39 @@
+body {
+
+}
+
+.wrapper {
+
+}
+
+// подключение переменных
+@import "variables.scss";
+
+// подключение миксинов
+
+// подключение всех стилей
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/logo.scss";
+@import "blocks/intro.scss";
+@import "blocks/footer.scss";
+@import "blocks/hashtag.scss";
+@import "blocks/social-btns.scss";
+@import "blocks/copyright.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantage.scss";
+
+@import "blocks/picture-advantage.scss";
+@import "blocks/icon-advantages.scss";
+@import "blocks/find-hotel.scss";
+@import "blocks/btn.scss";
+@import "blocks/map.scss";
+@import "blocks/map-canvas.scss";
+@import "blocks/photos.scss";
+@import "blocks/photo.scss";
+@import "blocks/main-promo.scss";
+@import "blocks/video.scss";
+
+@import "blocks/form.scss";
+@import "blocks/form-submit.scss";
+@import "blocks/popup.scss";

@@ -1,4 +1,4 @@
-.intro {
+.intro-index {
   border: $border;
   background: $blue url("../img/bg-back-mobile.jpg") center center no-repeat;
   background-size: cover;
@@ -13,17 +13,17 @@
 
 }
 
-.intro__image {
+.intro-index__image {
   padding-top: 90px;
   padding-bottom: 80px;
   display: block;
   margin: 0 auto;
-  width: 230px;
-  height: 40px;
+  width: 280px;
+  height: 215px;
 
   @media ($tablet-width) {
-    width: 460px;
-    height: 80px;
+    width: 466px;
+    height: 367px;
     padding-top: 78px;
     padding-bottom: 90px;
   }

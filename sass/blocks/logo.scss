@@ -1,3 +1,19 @@
 .logo {
   border: $border;
+  width: 104px;
+  height: 84px;
+  background: #491213;
+  margin: 0 auto;
+
+  @media ($tablet-width) {
+  position: absolute;
+  top: 0px;
+  transform: translateX(-50%);
+  left: 50%;
+  }
+
+  @media ($desktop-width) {
+    width: 190px;
+    height: 98px;
+  }
 }

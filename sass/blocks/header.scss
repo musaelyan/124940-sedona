@@ -1,3 +1,21 @@
 .header {
   border: $border;
+  position: relative;
+  @include clearfix;
+}
+
+.header__wrapper {
+  background: white;
+  height: 58px;
+  @media ($tablet-width) {
+    background: none;
+    height: 0px;
+  }
+}
+
+.header__menu-toggle {
+  float: right;
+  @media ($tablet-width) {
+  display: none;
+  }
 }

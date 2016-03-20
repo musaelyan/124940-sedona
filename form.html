@@ -17,16 +17,18 @@
             <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__link">Html Academy</a></li>
           </ul>
         </nav>
-        <button class="header__menu-toggle">Переключение меню</button>
-        <div class="logo">
-          <a href="index.html" class="logo__link">
-            <img src="" alt="" height="" width="" class="logo__picture">
-          </a>
+        <div class="header__wrapper">
+          <button class="header__menu-toggle">Переключение меню</button>
+          <div class="logo">
+            <a class="logo__link">
+              <img src="" alt="logo" height="" width="" class="logo__picture">
+            </a>
+          </div>
         </div>
       </header>
 
       <div class="intro">
-        <img src="" alt="" height="" width="" class="intro__image">
+        <img src="http://placehold.it/460x80" alt="Sedona" height="80" width="460" class="intro__image">
       </div>
 
       <section class="form">
@@ -37,7 +39,7 @@
 
         <form action="/echo" method="GET">
 
-          <div class="form__section">
+          <div class="form__section form__section--meet">
             <div class="form__legend">Представьтесь, пожалуйста:</div>
             <div class="form__line">
               <label for="name">Имя</label>
@@ -53,7 +55,7 @@
             </div>
           </div>
 
-          <div class="form__section">
+          <div class="form__section form__section--contacts">
             <div class="form__legend">Контактная информация:</div>
             <div class="form__line">
               <label for="phone">Контактный телефон:</label>
@@ -66,7 +68,7 @@
             </div>
           </div>
 
-          <div class="form__section">
+          <div class="form__section form__section--impression">
             <div class="form__legend">Ваше Общее впечатление:</div>
             <div class="form__line">
               <input type="radio" name="impression" value="+1" id="positive" checked>
@@ -82,7 +84,7 @@
             </div>
           </div>
 
-          <div class="form__section">
+          <div class="form__section form__section--attract">
             <div class="form__legend">Посещенные достопримечательности:</div>
             <div class="form__line">
               <input type="radio" name="attraction1" id="attr1" checked>
@@ -102,7 +104,7 @@
             </div>
           </div>
 
-          <div class="form__section">
+          <div class="form__section form__section--feel">
             <div class="form__legend">Опишите свои эмоции:</div>
             <div class="form__comment">
               <textarea name="comment">Опишите подробно все свои восторги</textarea>

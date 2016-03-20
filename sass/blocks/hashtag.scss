@@ -1,3 +1,7 @@
 .hashtag {
-  border: $border;
+
+  @media ($tablet-width) {
+    width: 33.333333%;
+    float: left;
+  }
 }

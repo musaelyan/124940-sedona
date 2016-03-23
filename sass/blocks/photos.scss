@@ -1,10 +1,19 @@
 .photos {
-
-  font-size: 0px;
-  text-align: center;
-
+  @media ($tablet-width) {
+    padding: 0 6%;
+  }
+  @media ($desktop-width) {
+    padding: 0;
+  }
 }
 
 .photos__header {
-  font-size: 14px;
+
+}
+
+.photos__container {
+  @media ($tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

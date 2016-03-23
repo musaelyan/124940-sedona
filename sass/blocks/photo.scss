@@ -1,18 +1,11 @@
 // сам контейнер
 .photo {
-  font-size: 14px;
-  display: inline-block;
-  vertical-align: top;
-
-  padding-left: 6%;
-  padding-right: 6%;
-  width: 88%;
-
 
   @media ($tablet-width) {
-    width: 44%;
-    padding-left: 0%;
-    padding-right: 0%;
+    width: 50%;
+    &:nth-child(1) {
+      width: 100%;
+    }
   }
 
   @media ($desktop-width) {
@@ -20,18 +13,6 @@
     }
 }
 
-// контейнер для первого фото
-.photo--first {
-
-  @media ($tablet-width) {
-    width: 88%;
-  }
-
-  @media ($desktop-width) {
-    width: 100%;
-    }
-
-}
 
 // фигуре (изображение +подпись)
 .photo__picture {
@@ -61,8 +42,6 @@
 
   }
 }
-
-
 
 
 .photo__author {

@@ -1,0 +1,29 @@
+.form-sections {
+  border: $border;
+  @media ($tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__section {
+
+
+  @media ($tablet-width) {
+    width: 100%;
+
+    &:nth-child(3) {
+      order: -1;
+      width:50%;
+    }
+
+    &:nth-child(1) {
+      width: 50%;
+    }
+
+  }
+
+  @media ($desktop-width) {
+
+    }
+}

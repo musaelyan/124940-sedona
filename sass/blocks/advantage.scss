@@ -1,3 +1,21 @@
 .advantage {
-  border: $border;
+  float: left;
+  width: 100%;
+  @media ($tablet-width) {
+    width: 33.333333%;
+  }
+}
+
+.advantage__title {
+  @include article-style--21px;
+}
+
+.advantage--blue {
+  background: $blue;
+  color: white;
+
+  @media ($tablet-width) {
+    height: 256px;
+  }
+
 }

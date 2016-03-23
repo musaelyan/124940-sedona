@@ -1,13 +1,46 @@
+
+@import "normalize.scss";
+// подключение переменных
+@import "variables.scss";
+
 body {
+  background: #f2f2f2;
+  margin: 0px;
+  padding: 0px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  color: #333333;
+  text-transform: uppercase;
+  min-width: 320px;
+  @media ($tablet-width) {
+    min-width: 768px;
+  }
+  @media ($desktop-width) {
+    min-width: 1200px;
+  }
 
 }
 
 .wrapper {
+  background: white;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 -5px 9px 2px #dbdbdb;
 
+  @media ($tablet-width) {
+    width: 100%;
+  }
+
+  @media ($desktop-width) {
+    width: 1200px;
+  }
 }
 
-// подключение переменных
-@import "variables.scss";
+// подключение миксинов
+@import "mixins.scss";
+
 
 // подключение миксинов
 
@@ -15,6 +48,7 @@ body {
 @import "blocks/header.scss";
 @import "blocks/menu.scss";
 @import "blocks/logo.scss";
+@import "blocks/intro-index.scss";
 @import "blocks/intro.scss";
 @import "blocks/footer.scss";
 @import "blocks/hashtag.scss";
@@ -22,7 +56,6 @@ body {
 @import "blocks/copyright.scss";
 @import "blocks/advantages.scss";
 @import "blocks/advantage.scss";
-
 @import "blocks/picture-advantage.scss";
 @import "blocks/icon-advantages.scss";
 @import "blocks/find-hotel.scss";
@@ -33,7 +66,8 @@ body {
 @import "blocks/photo.scss";
 @import "blocks/main-promo.scss";
 @import "blocks/video.scss";
-
 @import "blocks/form.scss";
+@import "blocks/form-sections.scss";
 @import "blocks/form-submit.scss";
+
 @import "blocks/popup.scss";

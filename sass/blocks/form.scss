@@ -1,3 +1,5 @@
 .form {
-  border: $border;
+  @media ($tablet-width) {
+    padding: 0 6%;
+  }
 }

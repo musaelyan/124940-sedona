@@ -1,3 +1,16 @@
 .picture-advantage {
-  border: $border;
+  float:left;
+  font-size: 0px;
+  width: 100%;
+  overflow: hidden;
+
+  @media ($tablet-width) {
+    width: 66.666666%;
+  }
+
+}
+
+.picture-advantage__photo {
+  margin: 0px;
+  padding: 0px;
 }

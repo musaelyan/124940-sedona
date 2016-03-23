@@ -1,3 +1,9 @@
 .copyright {
-  border: $border;
+  @media ($tablet-width) {
+    padding: 0px;
+    margin: 0px;
+    width: 33.333333%;
+    float: right;
+  }
+
 }

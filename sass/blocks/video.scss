@@ -1,3 +1,38 @@
 .video {
-  border: $border;
+  width: 320px;
+  height: 201px;
+  background: grey;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 30px;
+  @media ($tablet-width) {
+    width: 648px;
+    height: 499px;
+  }
+
+  @media ($desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
+
+}
+
+.video__control {
+  width: 280px;
+  height: 115px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: -66px;
+  transform: translateX(-50%);
+  left: 50%;
+  @media ($tablet-width) {
+    width: 648px;
+    height: 90px;
+    bottom: 0px;
+  }
+
+  @media ($desktop-width) {
+    width: 800px;
+    height: 93px;
+  }
 }

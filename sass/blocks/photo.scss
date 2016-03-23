@@ -1,3 +1,49 @@
+// сам контейнер
 .photo {
-  border: $border;
+
+  @media ($tablet-width) {
+    width: 50%;
+    &:nth-child(1) {
+      width: 100%;
+    }
+  }
+
+  @media ($desktop-width) {
+    width: 33.333333%;
+    }
+}
+
+
+// фигуре (изображение +подпись)
+.photo__picture {
+  margin: 0px;
+  overflow: hidden;
+
+  @media ($tablet-width) {
+
+  }
+
+  @media ($desktop-width) {
+
+  }
+
+}
+
+// само изображение
+.photo__image {
+  width: 280px;
+  height: 280px;
+
+  @media ($tablet-width) {
+    width: 100%;
+  }
+
+  @media ($desktop-width) {
+
+  }
+}
+
+
+.photo__author {
+  display: block;
 }

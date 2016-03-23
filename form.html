@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона - поиск гостиницы</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
@@ -17,16 +18,18 @@
             <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__link">Html Academy</a></li>
           </ul>
         </nav>
-        <button class="header__menu-toggle">Переключение меню</button>
-        <div class="logo">
-          <a href="index.html" class="logo__link">
-            <img src="" alt="" height="" width="" class="logo__picture">
-          </a>
+        <div class="header__wrapper">
+          <button class="header__menu-toggle">Переключение меню</button>
+          <div class="logo">
+            <a class="logo__link">
+              <img src="" alt="logo" height="" width="" class="logo__picture">
+            </a>
+          </div>
         </div>
       </header>
 
       <div class="intro">
-        <img src="" alt="" height="" width="" class="intro__image">
+        <img src="http://placehold.it/460x80" alt="Sedona" height="80" width="460" class="intro__image">
       </div>
 
       <section class="form">
@@ -37,75 +40,77 @@
 
         <form action="/echo" method="GET">
 
-          <div class="form__section">
-            <div class="form__legend">Представьтесь, пожалуйста:</div>
-            <div class="form__line">
-              <label for="name">Имя</label>
-              <input type="text" placeholder="Петр" id="name" required>
+          <div class="form-sections">
+            <div class="form__section form__section--meet">
+              <div class="form__legend">Представьтесь, пожалуйста:</div>
+              <div class="form__line">
+                <label for="name">Имя</label>
+                <input type="text" placeholder="Петр" id="name" required>
+              </div>
+              <div class="form__line">
+                <label for="surname">Фамилия</label>
+                <input type="text" placeholder="Иванов" id="surname" required>
+              </div>
+              <div class="form__line">
+                <label for="middle-name">Отчество</label>
+                <input type="text" placeholder="Александрович" id="middle-name" required>
+              </div>
             </div>
-            <div class="form__line">
-              <label for="surname">Фамилия</label>
-              <input type="text" placeholder="Иванов" id="surname" required>
-            </div>
-            <div class="form__line">
-              <label for="middle-name">Отчество</label>
-              <input type="text" placeholder="Александрович" id="middle-name" required>
-            </div>
-          </div>
 
-          <div class="form__section">
-            <div class="form__legend">Контактная информация:</div>
-            <div class="form__line">
-              <label for="phone">Контактный телефон:</label>
-              <input type="text" placeholder="Введите телефон" id="phone" required>
+            <div class="form__section form__section--contacts">
+              <div class="form__legend">Контактная информация:</div>
+              <div class="form__line">
+                <label for="phone">Контактный телефон:</label>
+                <input type="text" placeholder="Введите телефон" id="phone" required>
+              </div>
+              <p class="form__error">Ошибка, перепроверьте номер</p>
+              <div class="form__line">
+                <label for="email">Электронная почта:</label>
+                <input type="text" placeholder="Введите e-mail" id="email" required>
+              </div>
             </div>
-            <p class="form__error">Ошибка, перепроверьте номер</p>
-            <div class="form__line">
-              <label for="email">Электронная почта:</label>
-              <input type="text" placeholder="Введите e-mail" id="email" required>
-            </div>
-          </div>
 
-          <div class="form__section">
-            <div class="form__legend">Ваше Общее впечатление:</div>
-            <div class="form__line">
-              <input type="radio" name="impression" value="+1" id="positive" checked>
-              <label for="positive">Скорее положительное</label>
+            <div class="form__section form__section--impression">
+              <div class="form__legend">Ваше Общее впечатление:</div>
+              <div class="form__line">
+                <input type="radio" name="impression" value="+1" id="positive" checked>
+                <label for="positive">Скорее положительное</label>
+              </div>
+              <div class="form__line">
+                <input type="radio" name="impression" value="-1" id="negative">
+                <label for="negative">Скорее отрицательное</label>
+              </div>
+              <div class="form__line">
+                <input type="radio" name="impression" value="0" id="neutral">
+                <label for="neutral">Затрудняюсь ответить</label>
+              </div>
             </div>
-            <div class="form__line">
-              <input type="radio" name="impression" value="-1" id="negative">
-              <label for="negative">Скорее отрицательное</label>
-            </div>
-            <div class="form__line">
-              <input type="radio" name="impression" value="0" id="neutral">
-              <label for="neutral">Затрудняюсь ответить</label>
-            </div>
-          </div>
 
-          <div class="form__section">
-            <div class="form__legend">Посещенные достопримечательности:</div>
-            <div class="form__line">
-              <input type="radio" name="attraction1" id="attr1" checked>
-              <label for="attr1">Мост Дьявола</label>
+            <div class="form__section form__section--attract">
+              <div class="form__legend">Посещенные достопримечательности:</div>
+              <div class="form__line">
+                <input type="radio" name="attraction1" id="attr1" checked>
+                <label for="attr1">Мост Дьявола</label>
+              </div>
+              <div class="form__line">
+                <input type="radio" name="attraction2" id="attr2" checked>
+                <label for="attr2">Слайд-парк</label>
+              </div>
+              <div class="form__line">
+                <input type="radio" name="attraction3" id="attr3">
+                <label for="attr3">Гора-Колокол</label>
+              </div>
+              <div class="form__line">
+                <input type="radio" name="attraction4" id="attr4" checked>
+                <label for="attr4">Красные скалы</label>
+              </div>
             </div>
-            <div class="form__line">
-              <input type="radio" name="attraction2" id="attr2" checked>
-              <label for="attr2">Слайд-парк</label>
-            </div>
-            <div class="form__line">
-              <input type="radio" name="attraction3" id="attr3">
-              <label for="attr3">Гора-Колокол</label>
-            </div>
-            <div class="form__line">
-              <input type="radio" name="attraction4" id="attr4" checked>
-              <label for="attr4">Красные скалы</label>
-            </div>
-          </div>
 
-          <div class="form__section">
-            <div class="form__legend">Опишите свои эмоции:</div>
-            <div class="form__comment">
-              <textarea name="comment">Опишите подробно все свои восторги</textarea>
+            <div class="form__section form__section--feel">
+              <div class="form__legend">Опишите свои эмоции:</div>
+              <div class="form__comment">
+                <textarea name="comment">Опишите подробно все свои восторги</textarea>
+              </div>
             </div>
           </div>
 

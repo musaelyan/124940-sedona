@@ -22,14 +22,18 @@
           <button class="header__menu-toggle">Переключение меню</button>
           <div class="logo">
             <a class="logo__link">
-              <img src="" alt="logo" height="" width="" class="logo__picture">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img src="img/logo-sedona-mobile.svg" alt="logo" class="logo__picture">
+              </picture>
             </a>
           </div>
         </div>
       </header>
 
       <div class="intro">
-        <img src="http://placehold.it/460x80" alt="Sedona" height="80" width="460" class="intro__image">
+        <img src="img/text-sedona.svg" alt="Sedona" class="intro__image">
       </div>
 
       <section class="form">

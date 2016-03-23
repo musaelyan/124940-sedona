@@ -1,20 +1,49 @@
 .video {
   width: 320px;
   height: 201px;
-  background: grey;
   margin: 0 auto;
   position: relative;
   margin-top: 30px;
+
+  background-image: url("../img/video-mobile.jpg");
+  background-color: $blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+     .intro-index {
+      background-image: url("../img/video-mobile@2x.jpg");
+    }
+  }
+
   @media ($tablet-width) {
     width: 648px;
     height: 499px;
+    background-image: url("../img/video-tablet.jpg");
+    @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+       .intro-index {
+        background-image: url("../img/video-tablet@2x.jpg");
+      }
+    }
   }
 
   @media ($desktop-width) {
     width: 800px;
     height: 500px;
+    background-image: url("../img/video-desktop.jpg");
+    @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+       .intro-index {
+        background-image: url("../img/video-desktop@2x.jpg");
+      }
+    }
   }
-
 }
 
 .video__control {

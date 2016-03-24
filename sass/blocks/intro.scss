@@ -37,12 +37,13 @@
     left: 0;
     height: 57px;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 100% 57px;
+    background-size: 100% 27px;
 
     @media ($tablet-width) {
       background-image: url("../img/bg-intro-triangle-tablet.svg");
+      background-size: 100% 57px;
     }
     @media ($desktop-width) {
       background-image: url("../img/bg-intro-triangle-desktop.svg");

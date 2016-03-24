@@ -52,7 +52,8 @@
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: -66px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   left: 50%;
   @media ($tablet-width) {
     width: 648px;

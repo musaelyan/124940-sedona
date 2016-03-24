@@ -33,7 +33,7 @@
     display: block;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     height: 57px;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
@@ -44,6 +44,7 @@
     @media ($tablet-width) {
       background-image: url("../img/bg-intro-triangle-tablet.svg");
       background-size: 100% 57px;
+      bottom: 0;
     }
     @media ($desktop-width) {
       background-image: url("../img/bg-intro-triangle-desktop.svg");

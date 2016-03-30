@@ -1,3 +1,20 @@
 .advantages {
   @include clearfix;
+  position: relative;
+}
+
+.advantages__header {
+  @include after-intro__header;
+  }
+
+.advantages__title {
+  @include after-intro__title;
+  @media ($tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.advantages__description {
+  @include after-intro__description;
+  padding-bottom: 0px;
 }

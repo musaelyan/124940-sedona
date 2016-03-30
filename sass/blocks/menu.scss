@@ -1,5 +1,5 @@
 .menu {
-
+  text-align: center;
 }
 
 .menu__list {
@@ -14,17 +14,20 @@
 
 .menu__item {
   background: $blue;
+  border-bottom: 1px solid #678fa8;
   list-style: none;
   display: block;
-  font-size: 14px;
+  padding: 7px 0;
 
   @media ($tablet-width) {
     display: inline-block;
     background: white;
+    border-bottom: none;
     color: black;
     width: 20%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
       &:nth-child(2) {
         margin-right: 20%;
       }
@@ -39,5 +42,14 @@
 
 .menu__link {
   text-decoration: none;
+  color: white;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
 
+  @media ($tablet-width) {
+    color: black;
+    font-size: 14px;
+    line-height: 26px;
+    }
 }

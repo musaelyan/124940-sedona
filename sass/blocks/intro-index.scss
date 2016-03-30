@@ -35,19 +35,23 @@
     position: absolute;
     bottom: -1px;
     left: 0;
-    height: 57px;
+    height: 27px;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 100% 27px;
+    background-size: 322px 27px;
+    background-position-x: -1px;
 
     @media ($tablet-width) {
       background-image: url("../img/bg-intro-triangle-tablet.svg");
       background-size: 100% 57px;
+      height: 57px;
       bottom: 0;
     }
     @media ($desktop-width) {
       background-image: url("../img/bg-intro-triangle-desktop.svg");
+      background-size: 1202px 57px;
+      background-position-x: -1px;
     }
   }
 
@@ -55,7 +59,7 @@
 
 .intro-index__image {
   padding-top: 90px;
-  padding-bottom: 80px;
+  padding-bottom: 83px;
   display: block;
   margin: 0 auto;
   width: 282px;
@@ -64,8 +68,13 @@
   @media ($tablet-width) {
     width: 460px;
     height: 350px;
+    padding-top: 80px;
+    padding-bottom: 87px;
+  }
+
+  @media ($desktop-width) {
     padding-top: 78px;
-    padding-bottom: 90px;
+    padding-bottom: 92px;
   }
 
 }

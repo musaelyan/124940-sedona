@@ -3,3 +3,21 @@
     padding: 0 6%;
   }
 }
+
+.form__header {
+  @include after-intro__header;
+}
+
+.form__title {
+  @include after-intro__title;
+}
+
+.form__description {
+  @include after-intro__description;
+  &--br {
+    display: inline;
+    @media ($tablet-width) {
+      display: block;
+    }
+  }
+}

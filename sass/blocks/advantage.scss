@@ -1,21 +1,38 @@
 .advantage {
   float: left;
   width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  @include advantage;
   @media ($tablet-width) {
     width: 33.333333%;
   }
 }
 
-.advantage__title {
-  @include article-style--21px;
+.advantage--first:before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 37px;
+  background-image: url("../img/bg-triangle.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 37px;
+  @media ($tablet-width) {
+    display: none;
+  }
 }
 
-.advantage--blue {
-  background: $blue;
-  color: white;
 
+.advantage--blue {
   @media ($tablet-width) {
     height: 256px;
   }
+}
 
+.advantage--blue .advantage__title {
+  color: white;
 }

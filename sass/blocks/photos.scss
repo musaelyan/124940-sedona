@@ -8,12 +8,28 @@
 }
 
 .photos__header {
+  @include after-intro__header;
+}
 
+.photos__title {
+  @include after-intro__title;
+}
+
+.photos__description {
+  @include after-intro__description;
+  &--br {
+    display: inline;
+    @media ($tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .photos__container {
+
   @media ($tablet-width) {
     display: flex;
     flex-wrap: wrap;
+
   }
 }

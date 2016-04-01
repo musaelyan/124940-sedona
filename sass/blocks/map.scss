@@ -1,6 +1,9 @@
 .map {
   background: $blue url("../img/bg-map-mobile.jpg") center center no-repeat;
   background-size: cover;
-  height: 256px;
+  height: 350px;
   width: 100%;
+  @media ($tablet-width) {
+    background: $blue url("../img/bg-map-desktop.jpg") center center no-repeat;
+  }
 }

@@ -21,3 +21,133 @@
     }
   }
 }
+
+.form__line {
+  display: block;
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: normal;
+  position: relative;
+}
+
+.form__legend {
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 27px;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  background: #f2f2f2;
+  height: 58px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+input.form__meet[type="text"] {
+  width: 172px;
+  margin-left: 15px;
+}
+
+input.form__meet--long[type="text"] {
+  width: 210px;
+}
+
+input.form__contact[type="text"] {
+  width: 260px;
+  margin-top: 10px;
+}
+
+.form__icon:after {
+  display: inline;
+  width: 60px;
+  height: 60px;
+  background: #e6e6e6;
+  content: "";
+  
+}
+
+.formf__icon--phone:afterf {
+  content: url("../img/icon-phone.svg");
+}
+
+.formf__icon--mail:afterf {
+  content: url("../img/icon-mail.svg");
+}
+
+.form__padding {
+  padding-left: 20px;
+}
+
+.form__error {
+  text-transform: none;
+  color: #ff5c5c;
+  margin-top: 0px;
+}
+
+.form__line--impression,
+.form__line--atraction {
+  margin-top: 20px;
+}
+
+.form__line--impression label,
+.form__line--atraction label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 80px;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input.form__impression[type="radio"],
+input.form__atraction[type="checkbox"] {
+  display:none;
+}
+
+.form__line--impression label:before,
+.form__line--atraction label:before {
+  content: "";
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  background-color: #f2f2f2;
+  width: 56px;
+  height: 56px;
+}
+
+.form__line--impression label:before {
+    border-radius: 50%;
+}
+
+.form__line--atraction label:before {
+  border-radius: 5px;
+}
+
+input.form__impression[type=radio]:checked + label:before {
+  content: "\2022";
+  text-align: center;
+  font-size: 70px;
+  padding-top: 10px;
+  height: 46px;
+}
+
+input.form__atraction[type=checkbox]:checked + label:before {
+  content: url("../img/icon-tick.svg");
+  text-align: center;
+  font-size: 70px;
+  height: 56px;
+}

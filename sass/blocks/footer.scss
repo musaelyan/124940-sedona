@@ -1,9 +1,11 @@
 .footer {
   @include clearfix;
   width: 100%;
+  padding-top: 36px;
+  padding-bottom: 36px;
 
   text-align: center;
-  padding-top: 100px;
+
   @media ($tablet-width) {
     width: 100%;
 

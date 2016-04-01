@@ -9,6 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 100px;
 
   @media
     (min-resolution: 144dpi),
@@ -22,6 +23,7 @@
     width: 648px;
     height: 499px;
     background-image: url("../img/video-tablet.jpg");
+    margin-bottom: 0px;
     @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {

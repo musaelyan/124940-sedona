@@ -6,20 +6,19 @@
 }
 
 .form-sections__item {
+  border-top: 1px solid #e5e5e5;
+  padding: 23px 20px;
+  position: relative;
   @media ($tablet-width) {
     width: 100%;
-
     &:nth-child(3) {
       order: -1;
       width:50%;
     }
-
     &:nth-child(1) {
       width: 50%;
     }
-
   }
-
   @media ($desktop-width) {
 
     }

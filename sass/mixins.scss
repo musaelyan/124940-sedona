@@ -72,3 +72,24 @@
     color: white;
   }
 }
+
+@mixin btn {
+  border: none;
+  outline: none;
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  background: $blue;
+  width: 280px;
+  box-sizing: border-box;
+  padding: 16px 0;
+  text-align: center;
+  &:hover {
+    background: $blue-hover;
+  }
+  &:active {
+    background: $blue-active;
+    color: $white30;
+  }
+}

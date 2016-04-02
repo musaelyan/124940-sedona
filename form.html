@@ -19,7 +19,11 @@
           </ul>
         </nav>
         <div class="header__wrapper">
-          <button class="header__menu-toggle">Переключение меню</button>
+          <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
           <div class="logo">
             <a class="logo__link">
               <picture>
@@ -46,7 +50,7 @@
 
           <div class="form-sections">
             <div class="form-sections__item">
-              <div class="form__legend">Представьтесь, пожалуйста:</div>
+              <div class="form__legend">Представьтесь<span class="form__legend--hide">, пожалуйста</span>:</div>
               <div class="form__line">
                 <label for="name">Имя</label>
                 <input class="form__meet form__meet--long" type="text" placeholder="Петр" id="name" required>
@@ -62,20 +66,28 @@
             </div>
 
             <div class="form-sections__item">
-              <div class="form__legend">Контактная информация:</div>
-              <div class="form__line">
-                <label for="phone"><span class="form__padding">Контактный телефон:</span></label>
-                <input class="form__contact" type="text" placeholder="Введите телефон" id="phone" required><i class="form__icon form__icon--phone"></i>
+              <div class="form__legend form__legend--decoration">
+                <span class="form__legend--decoration-title">Контактная информация:</span>
               </div>
-              <p class="form__error"><span class="form__padding">Ошибка, перепроверьте номер</span></p>
-              <div class="form__line">
+              <div class="form__line form__line--contact">
+                <label for="phone"><span class="form__padding"><span class="form__line--hide">Контактный </span>телефон:</span></label>
+                <div class="form__wrap">
+                  <input class="form__contact" type="text" placeholder="Введите телефон" id="phone" required>
+                  <div class="form__icon form__icon--phone"></div>
+                </div>
+                <p class="form__error"><span class="form__padding">Ошибка, перепроверьте номер</span></p>
+              </div>
+              <div class="form__line form__line--contact">
                 <label for="email"><span class="form__padding">Электронная почта:</span></label>
-                <input class="form__contact" type="text" placeholder="Введите e-mail" id="email" required><i class="form__icon form__icon--mail"></i>
+                <div class="form__wrap">
+                  <input class="form__contact" type="text" placeholder="Введите e-mail" id="email" required>
+                  <div class="form__icon form__icon--mail"></div>
+                </div>
               </div>
             </div>
 
             <div class="form-sections__item">
-              <div class="form__legend">Ваше Общее впечатление:</div>
+              <div class="form__legend form__legend--margin20 form__legend--margin80">Ваше Общее впечатление:</div>
               <div class="form__line form__line--impression">
                 <input class="form__impression" type="radio" name="impression" value="+1" id="positive" checked>
                 <label for="positive">Скорее положительное</label>
@@ -91,27 +103,33 @@
             </div>
 
             <div class="form-sections__item">
-              <div class="form__legend">Посещенные достопримечательности:</div>
-              <div class="form__line form__line--atraction">
-                <input class="form__atraction" type="checkbox" name="attraction1" id="attr1" checked>
-                <label for="attr1">Мост Дьявола</label>
+              <div class="form__legend form__legend--margin20 form__legend--decoration">
+                <span class="form__legend--decoration-title">Посещенные достопримечательности:</span>
               </div>
-              <div class="form__line form__line--atraction">
-                <input class="form__atraction" type="checkbox" name="attraction2" id="attr2" checked>
-                <label for="attr2">Слайд-парк</label>
-              </div>
-              <div class="form__line form__line--atraction">
-                <input class="form__atraction" type="checkbox" name="attraction3" id="attr3">
-                <label for="attr3">Гора-Колокол</label>
-              </div>
-              <div class="form__line form__line--atraction">
-                <input class="form__atraction" type="checkbox" name="attraction4" id="attr4" checked>
-                <label for="attr4">Красные скалы</label>
+              <div class="form-atractions">
+                <div class="form__line form__line--atraction">
+                  <input class="form__atraction" type="checkbox" name="attraction1" id="attr1" checked>
+                  <label for="attr1">Мост Дьявола</label>
+                </div>
+                <div class="form__line form__line--atraction">
+                  <input class="form__atraction" type="checkbox" name="attraction2" id="attr2" checked>
+                  <label for="attr2">Слайд-парк</label>
+                </div>
+                <div class="form__line form__line--atraction">
+                  <input class="form__atraction" type="checkbox" name="attraction3" id="attr3">
+                  <label for="attr3">Гора-Колокол</label>
+                </div>
+                <div class="form__line form__line--atraction">
+                  <input class="form__atraction" type="checkbox" name="attraction4" id="attr4" checked>
+                  <label for="attr4">Красные скалы</label>
+                </div>
               </div>
             </div>
 
             <div class="form-sections__item">
-              <div class="form__legend">Опишите свои эмоции:</div>
+              <div class="form__legend form__legend--decoration">
+                <span class="form__legend--decoration-title">Опишите свои эмоции:</span>
+              </div>
               <div class="form__comment">
                 <textarea name="comment">Опишите подробно все свои восторги</textarea>
               </div>
@@ -120,6 +138,7 @@
 
           <div class="form-submit">
             <input class="btn btn--submit" type="submit" value="Отправить отзыв">
+            <div class="form-submit__help">* — обязательные поля</div>
           </div>
 
         </form>

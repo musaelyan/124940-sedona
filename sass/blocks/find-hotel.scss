@@ -1,3 +1,12 @@
 .find-hotel {
 
 }
+
+.btn--find {
+  display: block;
+  text-decoration: none;
+}
+
+.btn {
+  @include btn;
+}

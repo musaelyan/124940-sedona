@@ -1,14 +1,10 @@
 .footer {
-  @include clearfix;
+  font-size: 0px;
   width: 100%;
-  padding-top: 36px;
-  padding-bottom: 36px;
-
   text-align: center;
-
+  padding: 33px 0 20px;
   @media ($tablet-width) {
     width: 100%;
-
+    padding: 0;
   }
-
 }

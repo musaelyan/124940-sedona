@@ -18,6 +18,20 @@
   list-style: none;
   display: block;
   padding: 7px 0;
+  &:hover {
+    background: $blue-hover;
+    color: white;
+    @media ($tablet-width) {
+      background: white;
+    }
+  }
+  &:active {
+    background: $blue-active;
+    color: $white30;
+    @media ($tablet-width) {
+      background: white;
+    }
+  }
 
   @media ($tablet-width) {
     display: inline-block;
@@ -32,13 +46,13 @@
         margin-right: 20%;
       }
   }
-
   @media ($desktop-width) {
     display: inline-block;
     vertical-align: middle;
 
   }
 }
+
 
 .menu__link {
   text-decoration: none;
@@ -52,4 +66,22 @@
     font-size: 14px;
     line-height: 26px;
     }
+}
+
+.menu__link:hover {
+  color: $blue;
+}
+
+.menu__link:active {
+  color: $black30;
+}
+
+.menu__link--active {
+  color: #766357;
+  &:hover {
+    color: #604e43;
+  }
+  &:active {
+    color: #dbd8d5;
+  }
 }

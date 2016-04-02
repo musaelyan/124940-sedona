@@ -1,3 +1,6 @@
 .icon-advantages {
-
+  padding: 20px 6%;
+  @media ($tablet-width) {
+    padding: 0px;
+  }
 }

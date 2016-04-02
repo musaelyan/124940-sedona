@@ -1,9 +1,34 @@
 .copyright {
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #000000;
+
+
   @media ($tablet-width) {
     padding: 0px;
     margin: 0px;
     width: 33.333333%;
-    float: right;
+    display: inline-block;
+    vertical-align: middle;
   }
+}
 
+.copyright__link {
+  font-size: 0px;
+}
+
+.copyright--done,
+.copyright__link {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright--icon:hover {
+  fill: $blue;
+}
+
+.copyright--icon:active {
+  fill: #b2b2b2;
 }

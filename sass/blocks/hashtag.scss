@@ -6,6 +6,7 @@
 
   @media ($tablet-width) {
     width: 33.333333%;
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
   }
 }

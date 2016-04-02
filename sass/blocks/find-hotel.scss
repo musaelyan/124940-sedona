@@ -1,12 +1,23 @@
 .find-hotel {
+  @include after-intro__header;
+  &__title {
+    @include after-intro__title;
+    font-size: 21px;
+    margin: 0;
+  }
+  &__description {
+    @include after-intro__description;
+    margin-bottom: 30px;
+  }
+}
 
+.btn {
+  @include btn;
 }
 
 .btn--find {
   display: block;
   text-decoration: none;
-}
-
-.btn {
-  @include btn;
+  margin: 0 auto;
+  margin-bottom: 27px;
 }

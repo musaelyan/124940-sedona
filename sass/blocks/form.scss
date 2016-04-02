@@ -352,12 +352,16 @@ input.form__atraction[type=checkbox]:checked + label:before {
 }
 
 .form-submit__help {
-  font-size: 14px;
-  font-weight: normal;
-  color: #333333;
-  line-height: 26px;
-  position: absolute;
-  right: 0;
-  transform: translateY(-50%);
-  top: 50%;
+  display: none;
+  @media ($tablet-width) {
+    display: table;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    line-height: 26px;
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+  }
 }

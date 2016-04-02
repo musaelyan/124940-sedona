@@ -48,28 +48,37 @@
   }
 }
 
-
-
 @mixin advantage () {
   font-size: 14px;
   color: #333333;
   text-align: center;
   line-height: 21px;
   font-weight: normal;
-  padding: 60px 6%;
+  padding: 40px 6%;
   background: #eeeeee;
+  min-height: 170px;
   &__title {
     font-weight: bold;
     color: #000000;
     font-size: 18px;
-    padding-bottom: 30px;
   }
   &__number {
-    padding: 20px 0;
+    padding: 19px 0 13px;
+  }
+  &__description {
+    padding: 0px;
+    margin: 0px;
   }
   &--blue {
     background: $blue;
     color: white;
+  }
+  @media ($tablet-width) {
+    min-height: 256px;
+    padding: 40px 5.5%;
+    &__title {
+      font-size: 21px;
+    }
   }
 }
 

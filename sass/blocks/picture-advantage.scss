@@ -1,5 +1,4 @@
 .picture-advantage {
-  float:left;
   font-size: 0px;
   width: 100%;
   overflow: hidden;
@@ -7,8 +6,9 @@
 
   @media ($tablet-width) {
     width: 66.666666%;
+    display: inline-block;
+    vertical-align: top;
   }
-
 }
 
 .picture-advantage__photo {

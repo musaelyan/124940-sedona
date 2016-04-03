@@ -1,7 +1,7 @@
 // сам контейнер
 .photo {
   border-top: 1px solid #e5e5e5;
-  padding: 23px 20px;
+  padding: 23px 20px 13px;
   position: relative;
   @media ($tablet-width) {
     width: 50%;
@@ -95,7 +95,7 @@
   @media ($tablet-width) {
     right: 25px;
     position: absolute;
-    bottom: 25px;
+    bottom: 28px;
   }
   @media ($desktop-width) {
     color: white;

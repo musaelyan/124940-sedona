@@ -9,7 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 
   @media
     (min-resolution: 144dpi),
@@ -23,7 +23,7 @@
     width: 648px;
     height: 499px;
     background-image: url("../img/video-tablet.jpg");
-    margin-bottom: 0px;
+    margin-bottom: 45px;
     @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
@@ -37,6 +37,7 @@
     width: 800px;
     height: 500px;
     background-image: url("../img/video-desktop.jpg");
+    margin-bottom: 95px;
     @media
       (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
@@ -141,6 +142,9 @@
 .video__subtitles:hover,
 .video__full-screen:hover {
   fill: #333333;
+  @media ($tablet-width) {
+    fill: $white30;
+  }
 }
 
 .video__repeat:active,

@@ -10,8 +10,7 @@
   text-align: center;
   padding: 25px 0px;
   @media ($tablet-width) {
-    padding: 58px 90px;
-    padding-bottom: 38px;
+    padding: 58px 15% 38px;
   }
   @media ($desktop-width) {
 
@@ -75,7 +74,7 @@
   }
   @media ($tablet-width) {
     min-height: 256px;
-    padding: 40px 5.5%;
+    padding: 50px 5.5%;
     &__title {
       font-size: 21px;
     }
@@ -90,7 +89,7 @@
   color: white;
   text-transform: uppercase;
   background: $blue;
-  width: 280px;
+  min-width: 280px;
   box-sizing: border-box;
   padding: 16px 0;
   text-align: center;

@@ -8,6 +8,18 @@
   &__description {
     @include after-intro__description;
     margin-bottom: 30px;
+    &--br {
+      display: inline;
+      @media ($tablet-width) {
+        display: block;
+      }
+    }
+  }
+}
+
+.find-hotel__title {
+  @media ($desktop-width) {
+    padding-top: 0px;
   }
 }
 
@@ -20,4 +32,12 @@
   text-decoration: none;
   margin: 0 auto;
   margin-bottom: 27px;
+  width: 280px;
+  @media ($tablet-width) {
+    margin-bottom: 20px;
+    width: 458px;
+  }
+  @media ($desktop-width) {
+    margin-bottom: 27px;
+  }
 }

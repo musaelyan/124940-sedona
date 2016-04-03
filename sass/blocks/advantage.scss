@@ -13,7 +13,7 @@
 .advantage--first {
     padding-top: 70px;
     @media ($tablet-width) {
-      padding-top: 40px;
+      padding-top: 50px;
     }
   &:before {
     content: "";
@@ -83,11 +83,14 @@
   }
   @media ($tablet-width) {
     text-align: center;
-    padding: 40px 5.5%;
+    padding: 50px 5.5%;
     padding-top: 160px;
     &__title {
       font-size: 21px;
     }
+  }
+  @media ($desktop-width) {
+    padding: 160px 5.5% 75px;
   }
 }
 
@@ -109,6 +112,10 @@
   content: url("../img/icon-house.svg");
 }
 
+.advantage--icon-souvenirs {
+  order: 1;
+}
+
 .advantage--icon-souvenirs:before {
   content: url("../img/icon-gift.svg");
   @media ($tablet-width) {
@@ -120,10 +127,22 @@
   content: url("../img/icon-burger.svg");
 }
 
+.advantage--picture {
+  @media ($tablet-width) {
+    display: flex;
+  }
+}
+
+.advantage--blue-right {
+  @media ($tablet-width) {
+    order: 1;
+  }
+}
+
 .advantage--grey {
   padding: 20px 10%;
   @media ($tablet-width) {
-    padding: 40px 5.5%;
+    padding: 50px 5.5%;
   }
 }
 

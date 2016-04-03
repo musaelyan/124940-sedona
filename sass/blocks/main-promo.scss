@@ -3,6 +3,7 @@
   @include after-intro__header;
   @media ($tablet-width) {
     border-top: none;
+    padding: 45px 15% 38px;
   }
   @media ($desktop-width) {
     padding-top: 20px;

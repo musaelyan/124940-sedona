@@ -9,8 +9,10 @@
   padding-bottom: 0px;
   @media ($tablet-width) {
     font-size: 21px;
-    padding: 38px 90px;
-    padding-bottom: 20px;
+    padding: 38px 15% 20px;
+  }
+  @media ($desktop-width) {
+    padding: 5px 20% 20px;
   }
 }
 

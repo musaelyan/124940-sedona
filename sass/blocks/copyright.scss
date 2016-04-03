@@ -4,14 +4,16 @@
   line-height: 26px;
   font-weight: normal;
   color: #000000;
-
-
   @media ($tablet-width) {
     padding: 0px;
     margin: 0px;
     width: 33.333333%;
     display: inline-block;
     vertical-align: middle;
+  }
+  @media ($desktop-width) {
+    padding-left: 180px;
+    box-sizing: border-box;
   }
 }
 

@@ -1,3 +1,36 @@
 .form-submit {
+  text-align: center;
+  margin-bottom: 40px;
+  @media ($tablet-width) {
+    text-align: left;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media ($desktop-width) {
+    margin-bottom: 70px;
+  }
+}
 
+.form-submit input[type=submit] {
+  @include btn;
+  @media ($tablet-width) {
+    min-width: 320px;
+  }
+  @media ($desktop-width) {
+    min-width: 480px;
+  }
+}
+
+.form-submit__help {
+  display: none;
+  @media ($tablet-width) {
+    display: block;;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    line-height: 26px;
+  }
 }

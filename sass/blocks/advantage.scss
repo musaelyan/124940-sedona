@@ -44,13 +44,13 @@
   color: white;
 }
 
-.advantage__title--br {
+.advantage__title--shift {
   @media ($tablet-width) {
     display: block;
   }
 }
 
-.advantage__description--br {
+.advantage__description--shift {
   display: none;
   @media ($tablet-width) {
     display: inline;

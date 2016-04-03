@@ -8,7 +8,7 @@
   &__description {
     @include after-intro__description;
     margin-bottom: 30px;
-    &--br {
+    &--shift {
       display: inline;
       @media ($tablet-width) {
         display: block;

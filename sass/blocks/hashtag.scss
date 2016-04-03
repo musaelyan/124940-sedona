@@ -1,7 +1,12 @@
 .hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: black;
 
   @media ($tablet-width) {
     width: 33.333333%;
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
   }
 }

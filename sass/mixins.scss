@@ -6,9 +6,98 @@
   }
 }
 
-@mixin article-style--21px () {
-  font-size: 21px;
+@mixin after-intro__header {
+  text-align: center;
+  padding: 25px 0px;
+  @media ($tablet-width) {
+    padding: 58px 15% 38px;
+  }
+  @media ($desktop-width) {
+
+  }
+}
+
+@mixin after-intro__title () {
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  color: black;
+  padding: 0 7%;
+  @media ($tablet-width) {
+    font-size: 30px;
+  }
+  @media ($desktop-width) {
+    padding-top: 30px;
+  }
+}
+
+@mixin after-intro__description () {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #333333;
+  padding-top: 5px;
+  padding-left: 7%;
+  padding-right: 7%;
+  @media ($tablet-width) {
+    padding: 15px 0;
+  }
+  @media ($desktop-width) {
+
+  }
+}
+
+@mixin advantage () {
+  font-size: 14px;
+  color: #333333;
   text-align: center;
+  line-height: 21px;
+  font-weight: normal;
+  padding: 40px 6%;
+  background: #eeeeee;
+  min-height: 170px;
+  &__title {
+    font-weight: bold;
+    color: #000000;
+    font-size: 18px;
+  }
+  &__number {
+    padding: 19px 0 13px;
+  }
+  &__description {
+    padding: 0px;
+    margin: 0px;
+  }
+  &--blue {
+    background: $blue;
+    color: white;
+  }
+  @media ($tablet-width) {
+    min-height: 256px;
+    padding: 50px 5.5%;
+    &__title {
+      font-size: 21px;
+    }
+  }
+}
+
+@mixin btn {
+  border: none;
+  outline: none;
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  background: $blue;
+  min-width: 280px;
+  box-sizing: border-box;
+  padding: 16px 0;
+  text-align: center;
+  &:hover {
+    background: $blue-hover;
+  }
+  &:active {
+    background: $blue-active;
+    color: $white30;
+  }
 }

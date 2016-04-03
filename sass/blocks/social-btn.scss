@@ -1,0 +1,32 @@
+.social-btn {
+  width: 46px;
+  height: 48px;
+  background: $blue;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  position: relative;
+
+  &:nth-child(3) {
+    margin-right: 0px;
+  }
+}
+
+.social-btn--icon {
+  fill: white;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.social-btn:hover {
+  background: $blue-hover;
+}
+
+.social-btn:active,
+.social-btn--icon:active {
+  background: $blue-active;
+  fill: $white30;
+}

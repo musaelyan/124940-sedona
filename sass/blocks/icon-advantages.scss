@@ -1,3 +1,7 @@
 .icon-advantages {
-  border: $border;
+  padding: 20px 6%;
+  @media ($tablet-width) {
+    padding: 0px;
+    display: flex;
+  }
 }

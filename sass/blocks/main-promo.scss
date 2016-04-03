@@ -1,3 +1,23 @@
 .main-promo {
-  border: $border;
+  border-top: 1px solid #e5e5e5;
+  @include after-intro__header;
+  @media ($tablet-width) {
+    border-top: none;
+    padding: 45px 15% 38px;
+  }
+  @media ($desktop-width) {
+    padding-top: 20px;
+  }
+  &__title {
+    @include after-intro__title;
+  }
+  &__description {
+    @include after-intro__description;
+    &--br {
+      display: inline;
+      @media ($tablet-width) {
+        display: block;
+      }
+    }
+  }
 }

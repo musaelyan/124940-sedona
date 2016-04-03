@@ -1,3 +1,75 @@
 .popup {
-  border: $border;
+  background: white;
+  box-sizing: border-box;
+  width: 320px;
+  box-shadow: 0px 5px 10px 1px #e1e1e1;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  text-align: center;
+  @media ($tablet-width) {
+    width: 664px;
+  }
+}
+
+.popup--fail {
+  @media ($tablet-width) {
+    width: 424px;
+  }
+}
+
+.popup__description-bg,
+.popup__btn-bg {
+  padding: 20px 20px 20px;
+  @media ($tablet-width) {
+    padding: 40px 40px;
+  }
+}
+
+.popup__description-bg {
+  @media ($tablet-width) {
+    padding-bottom: 0px;
+  }
+}
+
+.popup__title {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: black;
+  padding-bottom: 25px;
+  @media ($tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.popup__description {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #333333;
+  padding: 0px 30px;
+}
+
+.popup__btn-bg--grey {
+  background: #f2f2f2;
+  @media ($tablet-width) {
+    margin-top: 40px;
+  }
+}
+
+.btn {
+  @include btn;
+}
+
+.btn--popup {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  @media ($tablet-width) {
+    height: 60px;
+  }
 }

@@ -1,5 +1,4 @@
 .header {
-  border: $border;
   position: relative;
   @include clearfix;
 }
@@ -7,9 +6,11 @@
 .header__wrapper {
   background: white;
   height: 58px;
+  position: relative;
   @media ($tablet-width) {
     background: none;
     height: 0px;
+    position: static;
   }
 }
 

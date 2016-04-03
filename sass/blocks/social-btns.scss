@@ -1,7 +1,10 @@
 .social-btns {
-
+  font-size: 0px;
+  margin-top: 35px;
+  margin-bottom: 25px;
   @media ($tablet-width) {
     width: 33.333333%;
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
   }
 }

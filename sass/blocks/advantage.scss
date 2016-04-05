@@ -44,13 +44,13 @@
   color: white;
 }
 
-.advantage__title--shift {
+.advantage__shift {
   @media ($tablet-width) {
     display: block;
   }
 }
 
-.advantage__description--shift {
+.advantage__description-shift {
   display: none;
   @media ($tablet-width) {
     display: inline;
@@ -71,7 +71,8 @@
   position: relative;
   &__title {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
+    font-family: "PT Sans Bold", Arial, sans-serif;
     line-height: 26px;
     color: #000000;
   }

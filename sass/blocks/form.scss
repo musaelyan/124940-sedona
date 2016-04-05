@@ -25,11 +25,12 @@
 .form__description {
   @include after-intro__description;
   padding-top: 10px;
-  &--shift {
-    display: inline;
-    @media ($tablet-width) {
-      display: block;
-    }
+}
+
+.form__shift {
+  display: inline;
+  @media ($tablet-width) {
+    display: block;
   }
 }
 
@@ -52,7 +53,8 @@
   font-size: 18px;
   line-height: 26px;
   color: black;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   text-align: center;
   @media ($tablet-width) {
     text-align: left;
@@ -91,6 +93,7 @@
     &-title {
       width: 50%;
       display: inline-block;
+      vertical-align: middle;
     }
     &:after {
       content: "";
@@ -154,7 +157,8 @@ input[type="text"] {
   height: 50px;
   color: black;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   padding-left: 20px;
 }
 
@@ -329,11 +333,13 @@ input[type="text"]:focus:hover {
 .form__line--impression label,
 .form__line--atraction label {
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   position: relative;
   padding-left: 80px;
   text-transform: none;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 18px;
 }
 
@@ -346,6 +352,7 @@ input.form__atraction[type="checkbox"] {
 .form__line--atraction label:before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   margin-right: 10px;
   position: absolute;
   left: 0px;
@@ -401,7 +408,8 @@ input.form__atraction[type=checkbox]:checked + label:before {
   color: black;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   padding: 15px 20px;
   width: 240px;
   min-height: 125px;

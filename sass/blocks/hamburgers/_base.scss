@@ -8,6 +8,7 @@
 
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
 
   transition-property: opacity, filter;
@@ -41,6 +42,7 @@
   width: $hamburger-layer-width;
   height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
   display: inline-block;
+  vertical-align: middle;
   position: relative;
 }
 

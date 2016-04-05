@@ -18,16 +18,16 @@
 
 .photos__description {
   @include after-intro__description;
-  &--shift {
-    display: inline;
-    @media ($tablet-width) {
-      display: block;
-    }
+}
+
+.photos__shift {
+  display: inline;
+  @media ($tablet-width) {
+    display: block;
   }
 }
 
 .photos__container {
-
   @media ($tablet-width) {
     display: flex;
     flex-wrap: wrap;

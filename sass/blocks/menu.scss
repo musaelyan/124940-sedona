@@ -40,6 +40,7 @@
 
   @media ($tablet-width) {
     display: inline-block;
+    vertical-align: top;
     background: white;
     border-bottom: none;
     color: black;
@@ -53,7 +54,7 @@
   }
   @media ($desktop-width) {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
 
   }
 }
@@ -79,7 +80,8 @@
   color: white;
   font-size: 18px;
   line-height: 40px;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: "PT Sans Bold", Arial, sans-serif;
 
   @media ($tablet-width) {
     color: black;

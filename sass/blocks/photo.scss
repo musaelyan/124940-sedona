@@ -61,7 +61,8 @@
 .photo-description {
   color: black;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   line-height: 24px;
   padding-top: 13px;
   @media ($tablet-width) {
@@ -90,7 +91,8 @@
 .photo__likes {
   color: black;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: "PT Sans Bold", Arial, sans-serif;
   line-height: 24px;
   padding: 5px 0px;
   display: flex;

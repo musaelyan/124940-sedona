@@ -13,11 +13,12 @@
   }
   &__description {
     @include after-intro__description;
-    &--shift {
-      display: inline;
-      @media ($tablet-width) {
-        display: block;
-      }
-    }
+  }
+}
+
+.main-promo__shift {
+  display: inline;
+  @media ($tablet-width) {
+    display: block;
   }
 }

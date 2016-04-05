@@ -8,12 +8,13 @@
   &__description {
     @include after-intro__description;
     margin-bottom: 30px;
-    &--shift {
-      display: inline;
-      @media ($tablet-width) {
-        display: block;
-      }
-    }
+  }
+}
+
+.find-hotel__shift {
+  display: inline;
+  @media ($tablet-width) {
+    display: block;
   }
 }
 

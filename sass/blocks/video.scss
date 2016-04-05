@@ -114,6 +114,7 @@
   justify-content: space-between;
   padding: 0 6%;
   box-sizing: border-box;
+  align-items: center;
   @media ($tablet-width) {
     padding: 0 37px;
     background: none;
@@ -131,6 +132,7 @@
   border: none;
   outline: none;
   background: none;
+  height: 20px;
 
   @media ($tablet-width) {
     fill: white;
@@ -142,9 +144,6 @@
 .video__subtitles:hover,
 .video__full-screen:hover {
   fill: #333333;
-  @media ($tablet-width) {
-    fill: $white30;
-  }
 }
 
 .video__repeat:active,

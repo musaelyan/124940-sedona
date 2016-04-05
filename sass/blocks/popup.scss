@@ -15,7 +15,11 @@
   }
 }
 
-.popup--fail {
+.popup--opened {
+  display: block;
+}
+
+.popup__fail {
   @media ($tablet-width) {
     width: 424px;
   }

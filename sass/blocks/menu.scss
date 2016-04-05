@@ -1,5 +1,10 @@
 .menu {
   text-align: center;
+  display: none;
+}
+
+.menu--opened {
+  display: block;
 }
 
 .menu__list {
@@ -53,6 +58,21 @@
   }
 }
 
+.menu__item--active {
+  background: $blue-hover;
+  @media ($tablet-width) {
+    background: white;
+  }
+}
+
+.menu__item--active:hover,
+.menu__item--active:active {
+  background: $blue-hover;
+  @media ($tablet-width) {
+    background: white;
+  }
+}
+
 
 .menu__link {
   text-decoration: none;
@@ -78,10 +98,13 @@
 
 .menu__link--active {
   color: #766357;
-  &:hover {
-    color: #604e43;
+  @media ($tablet-width) {
+    color: #766357;
   }
-  &:active {
-    color: #dbd8d5;
-  }
+}
+
+.menu__link--active:hover,
+.menu__link--active:active {
+  color: #766357;
+  cursor: default;
 }

@@ -14,7 +14,7 @@
   </head>
   <body>
 
-    <div class="popup">
+    <div class="popup popup__success">
       <div class="popup__description-bg">
         <p class="popup__title">Ваш отзыв отправлен!</p>
         <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div class="popup popup--fail">
+    <div class="popup popup__fail">
       <div class="popup__description-bg">
         <p class="popup__title">Что-то пошло не так!</p>
         <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -36,20 +36,20 @@
 
     <div class="wrapper">
       <header class="header">
-        <nav class="menu">
+        <button class="hamburger hamburger--collapse is-active" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="menu menu--opened">
           <ul class="menu__list">
             <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
             <li class="menu__item"><a href="photo.html" class="menu__link">Фото и видео</a></li>
-            <li class="menu__item"><a class="menu__link menu__link--active">Форма отзыва</a></li>
+            <li class="menu__item menu__item--active"><a class="menu__link menu__link--active">Форма отзыва</a></li>
             <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__link">Html Academy</a></li>
           </ul>
         </nav>
         <div class="header__wrapper">
-          <button class="hamburger hamburger--collapse" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
           <div class="logo">
             <a class="logo__link">
               <picture>

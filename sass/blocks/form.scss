@@ -105,7 +105,7 @@
     }
   }
   @media ($desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
     width: 100%;
     &:before {
       width: 30%;
@@ -213,6 +213,7 @@ input[type="text"]:focus:hover {
   }
   @media ($desktop-width) {
     width: 315px;
+    margin-top: 0px;
   }
 }
 
@@ -267,7 +268,7 @@ input[type="text"]:focus:hover {
   }
   @media ($desktop-width) {
     right: 180px;
-    top: -20px;
+    top: -30px;
   }
 }
 
@@ -296,14 +297,11 @@ input[type="text"]:focus:hover {
   margin-bottom: -22px;
   @media ($tablet-width) {
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     margin-top: -44px;
-  }
-  @media ($desktop-width) {
-    width: 100%;
   }
 }
 
@@ -311,12 +309,19 @@ input[type="text"]:focus:hover {
   @media ($tablet-width) {
     min-width: 180px;
     margin-top: 60px;
+    width: 50%;
+    padding-left: 70px;
+    box-sizing: border-box;
     &:nth-child(1) {
       order: -2;
     }
     &:nth-child(3) {
       order: -1;
     }
+  }
+  @media ($desktop-width) {
+    width: 25%;
+    padding-left: 0px;
   }
 }
 
@@ -344,7 +349,7 @@ input.form__atraction[type="checkbox"] {
   margin-right: 10px;
   position: absolute;
   left: 0px;
-  bottom: -10px;
+  bottom: -12px;
   background-color: #f2f2f2;
   width: 56px;
   height: 56px;

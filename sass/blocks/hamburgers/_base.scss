@@ -22,6 +22,7 @@
   border: 0;
   margin: 0;
   overflow: visible;
+  z-index: 9997;
 
   &:hover {
     @if $hamburger-hover-use-filter == true {

@@ -25,7 +25,7 @@
 .form__description {
   @include after-intro__description;
   padding-top: 10px;
-  &--br {
+  &--shift {
     display: inline;
     @media ($tablet-width) {
       display: block;
@@ -75,9 +75,7 @@
   @media ($tablet-width) {
     text-align: center;
     position: relative;
-    display: flex;
     width: 100%;
-    justify-content: space-between;
     margin-bottom: 15px;
     &:before {
       content: "";
@@ -87,10 +85,12 @@
       background: #dbdbdb;
       transform: translateY(-50%);
       top: 50%;
-      position: relative;
+      position: absolute;
+      left: 0px;
     }
     &-title {
       width: 50%;
+      display: inline-block;
     }
     &:after {
       content: "";
@@ -100,19 +100,21 @@
       background: #dbdbdb;
       transform: translateY(-50%);
       top: 50%;
-      position: relative;
+      position: absolute;
+      right: 0px;
     }
   }
   @media ($desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
+    width: 100%;
     &:before {
       width: 30%;
     }
     &-title {
-      width: 40%;
+      width: 30%;
     }
     &:after {
-      width: 35%;
+      width: 30%;
     }
   }
 }
@@ -129,6 +131,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+.form__line--contact-first {
+  @media ($desktop-width) {
+    padding-right: 80px;
+    box-sizing: border-box;
   }
 }
 
@@ -204,6 +213,7 @@ input[type="text"]:focus:hover {
   }
   @media ($desktop-width) {
     width: 315px;
+    margin-top: 0px;
   }
 }
 
@@ -258,7 +268,7 @@ input[type="text"]:focus:hover {
   }
   @media ($desktop-width) {
     right: 180px;
-    top: -20px;
+    top: -30px;
   }
 }
 
@@ -287,14 +297,11 @@ input[type="text"]:focus:hover {
   margin-bottom: -22px;
   @media ($tablet-width) {
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     margin-top: -44px;
-  }
-  @media ($desktop-width) {
-    width: 100%;
   }
 }
 
@@ -302,12 +309,19 @@ input[type="text"]:focus:hover {
   @media ($tablet-width) {
     min-width: 180px;
     margin-top: 60px;
+    width: 50%;
+    padding-left: 70px;
+    box-sizing: border-box;
     &:nth-child(1) {
       order: -2;
     }
     &:nth-child(3) {
       order: -1;
     }
+  }
+  @media ($desktop-width) {
+    width: 25%;
+    padding-left: 0px;
   }
 }
 
@@ -332,23 +346,33 @@ input.form__atraction[type="checkbox"] {
 .form__line--atraction label:before {
   content: "";
   display: inline-block;
-  width: 55px;
-  height: 55px;
   margin-right: 10px;
   position: absolute;
   left: 0px;
-  bottom: -10px;
+  bottom: -12px;
   background-color: #f2f2f2;
   width: 56px;
   height: 56px;
 }
 
 .form__line--impression label:before {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .form__line--atraction label:before {
   border-radius: 5px;
+}
+
+input.form__impression[type=radio]:checked + label:before {
+  background-color: black;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 17px solid #f2f2f2;
+}
+
+input.form__impression[type=radio]:hover:checked + label:hover:before {
+  border: 17px solid #e5e5e5;
 }
 
 .form__line--impression label:hover:before,
@@ -361,13 +385,7 @@ input.form__atraction[type="checkbox"] {
   background: #d5d5d5;
 }
 
-input.form__impression[type=radio]:checked + label:before {
-  content: "\2022";
-  text-align: center;
-  font-size: 70px;
-  padding-top: 10px;
-  height: 46px;
-}
+
 
 input.form__atraction[type=checkbox]:checked + label:before {
   content: url("../img/icon-tick.svg");
@@ -389,6 +407,7 @@ input.form__atraction[type=checkbox]:checked + label:before {
   min-height: 125px;
   margin-top: 20px;
   margin-bottom: 25px;
+  resize: none;
   @media ($tablet-width) {
     width: 100%;
     box-sizing: border-box;

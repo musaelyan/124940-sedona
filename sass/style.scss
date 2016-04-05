@@ -1,5 +1,15 @@
-
 @import "normalize.scss";
+
+// шрифт
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'),
+       url('../fonts/ptsans.woff') format('woff'),
+       url('../fonts/ptsans.woff2') format('woff2'),
+       url('../fonts/ptsansbold.woff') format('woff'),
+       url('../fonts/ptsansbold.woff2') format('woff2');
+}
+
 // подключение переменных
 @import "variables.scss";
 
@@ -7,7 +17,7 @@ body {
   background: #f2f2f2;
   margin: 0px;
   padding: 0px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
@@ -60,7 +70,6 @@ body {
 @import "blocks/picture-advantage.scss";
 @import "blocks/icon-advantages.scss";
 @import "blocks/find-hotel.scss";
-@import "blocks/btn.scss";
 @import "blocks/map.scss";
 @import "blocks/map-canvas.scss";
 @import "blocks/photos.scss";

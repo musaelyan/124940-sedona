@@ -13,7 +13,7 @@
   }
   &__description {
     @include after-intro__description;
-    &--br {
+    &--shift {
       display: inline;
       @media ($tablet-width) {
         display: block;

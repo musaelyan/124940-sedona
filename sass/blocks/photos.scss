@@ -9,6 +9,7 @@
 
 .photos__header {
   @include after-intro__header;
+  padding: 25px 0px 20px;
 }
 
 .photos__title {
@@ -17,7 +18,7 @@
 
 .photos__description {
   @include after-intro__description;
-  &--br {
+  &--shift {
     display: inline;
     @media ($tablet-width) {
       display: block;

@@ -14,13 +14,13 @@
   }
   @media ($desktop-width) {
     width: 33.333333%;
-    margin-bottom: -7px;
     }
 }
 
 
 // фигуре (изображение +подпись)
 .photo__link {
+  display: block;
   text-decoration: none;
 }
 
@@ -28,23 +28,33 @@
 .photo__picture {
   margin: 0px;
   overflow: hidden;
-  @media ($tablet-width) {
-    background: #f2f2f2;
-  }
-  @media ($desktop-width) {
-    background: none;
-    position: relative;
-  }
 }
 
 // само изображение
 .photo__image {
   width: 280px;
   height: 280px;
-
+  display: block;
   @media ($tablet-width) {
     width: 100%;
     height: auto;
+  }
+}
+
+
+.photo__description {
+  @media ($tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f2f2f2;
+  }
+  @media ($desktop-width) {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
   }
 }
 
@@ -53,22 +63,14 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
-  padding-top: 5px;
+  padding-top: 13px;
   @media ($tablet-width) {
-    padding-top: 8px;
+    padding-top: 11px;
     padding-left: 15px;
     padding-bottom: 18px;
   }
   @media ($desktop-width) {
-    position: absolute;
     color: white;
-    bottom: 7px;
-    left: 0px;
-    background: rgba(0,0,0,0.3);
-    width: 100%;
-    height: 40px;
-    padding-top: 15px;
-    padding-left: 28px;
   }
 }
 
@@ -90,17 +92,14 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
-  margin-top: 9px;
-
+  padding: 5px 0px;
+  display: flex;
   @media ($tablet-width) {
-    right: 25px;
-    position: absolute;
-    bottom: 28px;
+    padding-right: 15px;
   }
   @media ($desktop-width) {
     color: white;
-    right: 17px;
-    bottom: 27px;
+
   }
 }
 
